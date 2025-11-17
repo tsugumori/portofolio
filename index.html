@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tech Leader & Desarrollador Full Stack PHP con más de 10 años de experiencia en liderazgo técnico, Laravel y soluciones de Compliance">
+    <title>Lucas Troncoso | Tech Leader & Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">LT<span class="accent">.</span></a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+                    <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
+                    <li><a href="#contacto" class="nav-link cta-btn">Contacto</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-tag">
+                        <span class="dot"></span>
+                        Disponible para nuevos proyectos
+                    </div>
+                    <h1 class="hero-title">
+                        Tech Leader &
+                        <span class="gradient-text">Desarrollador Full Stack PHP</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Liderazgo técnico con más de <strong>10 años de experiencia</strong> en soluciones escalables en PHP/Laravel.
+                        Especialista en <strong>Compliance y automatización de procesos</strong>.
+                    </p>
+                    <div class="hero-info">
+                        <div class="info-item">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                            </svg>
+                            Buenos Aires, Argentina
+                        </div>
+                        <div class="info-item">
+                            <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                            </svg>
+                            troncoso.lm@gmail.com
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#contacto" class="btn btn-primary">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                            </svg>
+                            Agenda una Consulta Técnica
+                        </a>
+                        <a href="https://www.linkedin.com/in/lucas-troncoso" target="_blank" class="btn btn-secondary">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" fill="currentColor"/>
+                            </svg>
+                            Ver LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot-red"></span>
+                                <span class="dot-yellow"></span>
+                                <span class="dot-green"></span>
+                            </div>
+                            <div class="window-title">TechLeader.php</div>
+                        </div>
+                        <div class="window-content">
+                            <pre><code><span class="code-keyword">&lt;?php</span>
+
+<span class="code-keyword">class</span> <span class="code-class">TechLeader</span> {
+    <span class="code-keyword">private</span> <span class="code-var">$experience</span> = <span class="code-string">'10+ years'</span>;
+    <span class="code-keyword">private</span> <span class="code-var">$expertise</span> = [
+        <span class="code-string">'PHP/Laravel'</span>,
+        <span class="code-string">'Team Leadership'</span>,
+        <span class="code-string">'Compliance'</span>
+    ];
+
+    <span class="code-keyword">public function</span> <span class="code-function">solveChallenges</span>() {
+        <span class="code-keyword">return</span> <span class="code-string">'Scalable Solutions'</span>;
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades & <span class="gradient-text">Tecnologías</span></h2>
+                <p class="section-subtitle">Stack tecnológico y competencias de liderazgo</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Leadership -->
+                <div class="skill-card">
+                    <div class="skill-icon leadership-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Liderazgo y Gestión</h3>
+                    <ul class="skill-list">
+                        <li>Liderazgo de Equipos</li>
+                        <li>Gestión de Proyectos</li>
+                        <li>Metodologías Ágiles</li>
+                        <li>Mentoría Técnica</li>
+                    </ul>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-card">
+                    <div class="skill-icon backend-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Backend & Core</h3>
+                    <ul class="skill-list">
+                        <li>PHP & Laravel</li>
+                        <li>ASP.NET MVC</li>
+                        <li>REST APIs</li>
+                        <li>Seguridad OWASP</li>
+                    </ul>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skill-card">
+                    <div class="skill-icon devops-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">DevOps & Bases de Datos</h3>
+                    <ul class="skill-list">
+                        <li>Docker</li>
+                        <li>MySQL & PostgreSQL</li>
+                        <li>Git & GitHub</li>
+                        <li>CI/CD</li>
+                    </ul>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-card">
+                    <div class="skill-icon frontend-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-title">Frontend</h3>
+                    <ul class="skill-list">
+                        <li>JavaScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>Bootstrap</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2 class="section-title">Sobre <span class="gradient-text">Mí</span></h2>
+                    </div>
+                    <p class="about-description">
+                        Tech Leader y Desarrollador Full Stack con más de <strong>10 años de experiencia</strong> liderando equipos técnicos,
+                        gestionando proyectos y desarrollando soluciones innovadoras.
+                    </p>
+                    <p class="about-description">
+                        Mi enfoque combina excelencia técnica con habilidades de liderazgo comprobadas. He dirigido equipos
+                        en la construcción de sistemas críticos de negocio, con especial énfasis en soluciones de
+                        <strong>Compliance y automatización de procesos</strong>.
+                    </p>
+                    <p class="about-description">
+                        Comprometido con la <strong>formación de nuevas generaciones</strong> de desarrolladores, combino mi rol
+                        como Tech Leader con mi pasión por la enseñanza como Profesor de Tecnología. Esta dualidad me permite
+                        mantener habilidades de <strong>comunicación efectiva con stakeholders</strong> a todos los niveles.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Años de Experiencia</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">70%</div>
+                            <div class="stat-label">Reducción en Tiempos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Compromiso</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <div class="visual-title">Valores Profesionales</div>
+                        </div>
+                        <div class="values-list">
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div class="value-text">
+                                    <strong>Excelencia Técnica:</strong> Código limpio, escalable y mantenible
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div class="value-text">
+                                    <strong>Liderazgo Empático:</strong> Desarrollo de equipos de alto rendimiento
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div class="value-text">
+                                    <strong>Innovación Continua:</strong> Actualización constante en tecnologías
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div class="value-text">
+                                    <strong>Mentoría:</strong> Compromiso con el crecimiento del equipo
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyecto <span class="gradient-text">Destacado</span></h2>
+                <p class="section-subtitle">Solución que generó impacto medible en el negocio</p>
+            </div>
+            <div class="project-featured">
+                <div class="project-content">
+                    <div class="project-tag">
+                        <svg class="tag-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        2024 - Compliance & Automation
+                    </div>
+                    <h3 class="project-title">Sistema de Compliance - Monitoreo Antilavado</h3>
+                    <p class="project-description">
+                        Desarrollo de una solución automatizada de prevención de lavado de activos y cumplimiento normativo
+                        que transformó los procesos de análisis de la organización.
+                    </p>
+                    <div class="project-impact">
+                        <div class="impact-badge">
+                            <svg class="impact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" fill="currentColor"/>
+                            </svg>
+                            <div class="impact-text">
+                                <div class="impact-number">70%</div>
+                                <div class="impact-label">Reducción en tiempo de análisis</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Compliance</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <div class="project-features">
+                        <h4 class="features-title">Características Principales:</h4>
+                        <ul class="features-list">
+                            <li>
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Monitoreo automatizado de transacciones en tiempo real
+                            </li>
+                            <li>
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Sistema de alertas inteligentes basado en reglas de negocio
+                            </li>
+                            <li>
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Dashboard ejecutivo con métricas y KPIs de cumplimiento
+                            </li>
+                            <li>
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Integración con sistemas legacy mediante APIs REST
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-visual">
+                    <div class="visual-mockup">
+                        <div class="mockup-browser">
+                            <div class="browser-header">
+                                <div class="browser-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="browser-url">compliance-system.app</div>
+                            </div>
+                            <div class="browser-content">
+                                <div class="dashboard-mockup">
+                                    <div class="dashboard-header">
+                                        <div class="dashboard-title">Panel de Monitoreo</div>
+                                        <div class="dashboard-status">
+                                            <span class="status-dot"></span>
+                                            Sistema Activo
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-metrics">
+                                        <div class="metric-card">
+                                            <div class="metric-value">1,247</div>
+                                            <div class="metric-label">Transacciones Hoy</div>
+                                        </div>
+                                        <div class="metric-card">
+                                            <div class="metric-value">3</div>
+                                            <div class="metric-label">Alertas Activas</div>
+                                        </div>
+                                        <div class="metric-card">
+                                            <div class="metric-value">98.5%</div>
+                                            <div class="metric-label">Cumplimiento</div>
+                                        </div>
+                                    </div>
+                                    <div class="dashboard-chart">
+                                        <div class="chart-bar" style="height: 60%"></div>
+                                        <div class="chart-bar" style="height: 85%"></div>
+                                        <div class="chart-bar" style="height: 70%"></div>
+                                        <div class="chart-bar" style="height: 95%"></div>
+                                        <div class="chart-bar" style="height: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experiencia <span class="gradient-text">Profesional</span></h2>
+                <p class="section-subtitle">Roles clave en mi trayectoria</p>
+            </div>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Enero 2024 - Actualidad</div>
+                        <h3 class="timeline-title">Tech Leader</h3>
+                        <div class="timeline-company">ePagos SA</div>
+                        <p class="timeline-description">
+                            Liderazgo de equipos de desarrollo en la creación de soluciones fintech escalables.
+                            Responsable de decisiones estratégicas de arquitectura y diseño de sistemas críticos.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Liderazgo de equipo multidisciplinario de desarrollo
+                            </li>
+                            <li>
+                                <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Diseño de arquitectura de soluciones escalables en PHP/Laravel
+                            </li>
+                            <li>
+                                <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Implementación de sistema de Compliance antilavado
+                            </li>
+                            <li>
+                                <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Mentoría técnica y desarrollo de talento en el equipo
+                            </li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-badge">PHP</span>
+                            <span class="tech-badge">Laravel</span>
+                            <span class="tech-badge">Team Leadership</span>
+                            <span class="tech-badge">Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Agosto 2019 - Mayo 2022</div>
+                        <h3 class="timeline-title">Consultor de Desarrollo de Software</h3>
+                        <div class="timeline-company">UCAR - DIPROSE</div>
+                        <p class="timeline-description">
+                            Desarrollo backend especializado en soluciones gubernamentales de alta complejidad.
+                            Optimización de procesos y diseño de lógica de negocio crítica.
+                        </p>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Desarrollo backend de sistemas críticos del sector público
+                            </li>
+                            <li>
+                                <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Optimización de procesos y automatización de flujos de trabajo
+                            </li>
+                            <li>
+                                <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Implementación de lógica de negocio compleja
+                            </li>
+                            <li>
+                                <svg class="achievement-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="currentColor"/>
+                                </svg>
+                                Integración de sistemas legacy con nuevas tecnologías
+                            </li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span class="tech-badge">Backend Development</span>
+                            <span class="tech-badge">Process Optimization</span>
+                            <span class="tech-badge">Government Sector</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h2 class="contact-title">¿Hablamos de tu próximo <span class="gradient-text">desafío</span>?</h2>
+                    <p class="contact-description">
+                        Si buscas un líder técnico con profundo conocimiento en desarrollo robusto,
+                        escalable y cumplimiento normativo, estoy listo para colaborar.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:troncoso.lm@gmail.com" class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="method-info">
+                                <div class="method-label">Email</div>
+                                <div class="method-value">troncoso.lm@gmail.com</div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lucas-troncoso" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="method-info">
+                                <div class="method-label">LinkedIn</div>
+                                <div class="method-value">Lucas Troncoso</div>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="method-info">
+                                <div class="method-label">Ubicación</div>
+                                <div class="method-value">Buenos Aires, Argentina</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta-box">
+                    <div class="cta-box-content">
+                        <div class="cta-box-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <h3 class="cta-box-title">Agenda una Consulta Técnica</h3>
+                        <p class="cta-box-text">
+                            Discutamos cómo puedo aportar valor a tu equipo u organización.
+                        </p>
+                        <a href="mailto:troncoso.lm@gmail.com?subject=Consulta%20Técnica%20-%20Portafolio" class="btn btn-primary btn-large">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/>
+                            </svg>
+                            Enviar Mensaje
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">LT<span class="accent">.</span></div>
+                    <p class="footer-text">Tech Leader & Full Stack Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/lucas-troncoso" target="_blank" class="footer-link">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:troncoso.lm@gmail.com" class="footer-link">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lucas Troncoso. Desarrollado con pasión por la tecnología.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
