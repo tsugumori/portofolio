@@ -393,9 +393,13 @@ body {
 /* ===================================
    SECTION HEADERS
    =================================== */
+section {
+    scroll-margin-top: 80px;
+}
+
 .section-header {
     text-align: center;
-    margin-bottom: var(--spacing-3xl);
+    margin-bottom: var(--spacing-xl);
 }
 
 .section-title {
@@ -419,8 +423,10 @@ body {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-lg);
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .skill-card {
@@ -500,7 +506,7 @@ body {
    ABOUT SECTION
    =================================== */
 .about {
-    padding: var(--spacing-3xl) 0;
+    padding: var(--spacing-2xl) 0;
 }
 
 .about-content {
@@ -508,13 +514,14 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-3xl);
     align-items: start;
+    width: 100%;
 }
 
 .about-description {
     color: var(--color-text-secondary);
-    font-size: 1.125rem;
-    line-height: 1.8;
-    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
 }
 
 .about-stats {
@@ -571,8 +578,8 @@ body {
 
 .value-item {
     display: flex;
-    gap: var(--spacing-md);
-    padding: var(--spacing-md) 0;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) 0;
 }
 
 .value-item:not(:last-child) {
@@ -593,7 +600,8 @@ body {
 
 .value-text {
     color: var(--color-text-secondary);
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 .value-text strong {
@@ -1233,6 +1241,7 @@ body {
 
     .skills-grid {
         grid-template-columns: 1fr;
+        max-width: 100%;
     }
 
     .dashboard-metrics {
