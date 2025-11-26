@@ -1176,7 +1176,10 @@ section {
         gap: var(--spacing-xl);
     }
 
-    .hero-visual,
+    .hero-text {
+        order: -1;
+    }
+
     .project-visual {
         order: -1;
     }
