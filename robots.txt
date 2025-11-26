@@ -1,0 +1,13 @@
+# Robots.txt para Portfolio Lucas Troncoso
+# Permite a todos los buscadores indexar todo el contenido
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lucastroncoso.com/sitemap.xml
+
+# Bloquear archivos innecesarios (opcional)
+Disallow: /css/
+Disallow: /js/
+Disallow: /*.json$

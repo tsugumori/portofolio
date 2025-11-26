@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: Integrar Google Analytics 4 para métricas del sitio\n\n- Agregado tracking code de GA4 (G-9GQMLWJ36K)\n- Implementado en el <head> para captura correcta de datos\n- Configurado para monitorear tráfico web y comportamiento de usuarios\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: Aplicar manual de marca LT. al portfolio\n\nColores actualizados según manual de marca:\n- Carbon Black (#0a0a0a) como fondo principal\n- Surface Gray (#161616) para cards y superficies\n- Syntax Cyan (#00E0FF) como acento principal\n- Gray (#888888) para texto secundario\n\nTipografía actualizada:\n- Montserrat (300, 400, 500, 600, 700, 900) para títulos y textos\n- Fira Code (300, 400, 600) para código y detalles técnicos\n\nLogo optimizado:\n- Font-weight: 900 (Black) según manual\n- Letter-spacing: -0.05em para mayor impacto visual\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push)",
+      "Bash(git commit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
