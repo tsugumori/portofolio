@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fondo oscuro circular -->
+  <circle cx="50" cy="50" r="50" fill="#0a0a0a"/>
+
+  <!-- Borde sutil cyan -->
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#00E0FF" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Texto LT. -->
+  <text x="50" y="50"
+        font-family="Montserrat, sans-serif"
+        font-weight="900"
+        font-size="36"
+        fill="#ffffff"
+        text-anchor="middle"
+        dominant-baseline="central"
+        letter-spacing="-2">
+    LT
+    <tspan fill="#00E0FF">.</tspan>
+  </text>
+</svg>
