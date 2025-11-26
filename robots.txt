@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://tudominio.com/sitemap.xml
+Sitemap: https://lucastroncoso.com/sitemap.xml
 
 # Bloquear archivos innecesarios (opcional)
 Disallow: /css/
